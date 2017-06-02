@@ -13,8 +13,8 @@
    */
 
    function setMyLightGreen(){
-    var lightId = dataset.lightId;
-    var lightGreen = document.getElementById('lightId');
+    var lightId = this.dataset.lightId;
+    var lightGreen = document.getElementById(lightId);
     lightGreen.setAttribute('class', 'light-green');
    }
 
@@ -31,8 +31,8 @@
    */
 
    function setMyLightClass(event, desiredClass){
-    var lightId = dataset.lightId;
-    var lightClass = document.getElementById('lightId');
+    var lightId = this.dataset.lightId;
+    var lightClass = document.getElementById(lightId);
     lightClass.setAttribute('class', 'desiredClass');
    }
 
@@ -67,6 +67,9 @@
    * to set the context to the correct object (the current context)
    */
 
+   btn1.addEventListener('click',function(){
+    setMyLightGreen.apply(this);
+   });
 
   /*
    * Add a click event listener to btn2
