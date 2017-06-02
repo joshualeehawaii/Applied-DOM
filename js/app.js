@@ -18,7 +18,6 @@
     lightGreen.setAttribute('class', 'light-green');
    }
 
-
   /*
    * Create a function named setMyLightClass
    * which takes two arguments: event, desiredClass
@@ -31,9 +30,14 @@
    * on this dom element, set the className to the value of desiredClass
    */
 
+   function setMyLightClass(event, desiredClass){
+    var lightId = dataset.lightId;
+    var lightClass = document.getElementById('lightId');
+    lightClass.setAttribute('class', 'desiredClass');
+   }
 
   /*
-   * Declare 15 constants btn1, btn2, btn3, ...
+   * Declare 15 variables btn1, btn2, btn3, ...
    * use a dom element selector method to assign each const
    * to the button that has an id of the same name.
    */
